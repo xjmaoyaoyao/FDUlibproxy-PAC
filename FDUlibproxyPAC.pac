@@ -32,7 +32,20 @@ function FindProxyForURL(url, host) {
 	if (shExpMatch(url, "*.wanfangdata.com.cn*")) {return proxy;}
 	if (shExpMatch(url, "*.pnas.org*")) {return proxy;}
 	if (shExpMatch(url, "*.oup.com*")) {return proxy;}
+	if (shExpMatch(url, "*.cshlp.org*")) {return proxy;}
+	if (shExpMatch(url, "*.biomedcentral.com*")) {return proxy;}
+	if (shExpMatch(url, "*.karger.com*")) {return proxy;}
+	if (shExpMatch(url, "*.liebertpub.com*")) {return proxy;}
+	if (shExpMatch(url, "*.tandfonline.com*")) {return proxy;}
+	if (shExpMatch(url, "*.embopress.org*")) {return proxy;}
+	if (shExpMatch(url, "*.jneurosci.org*")) {return proxy;}
+	if (shExpMatch(url, "*.asahq.org*")) {return proxy;}	
 	if (shExpMatch(url, "*.webofknowledge.com*")) {return proxy;}
+	if (shExpMatch(url, "*.neurology.org*")) {return proxy;}
+	if (shExpMatch(url, "*.europepmc.org*")) {return proxy;}
+	if (shExpMatch(url, "*.plos.org*")) {return proxy;}
+	if (shExpMatch(url, "*.hindawi.com*")) {return proxy;}
+	if (shExpMatch(url, "*.karger.com*")) {return proxy;}
 	//接下来是常用的国内网站（并不常用），走直接连接
 	if (shExpMatch(url, "*.baidu.com*")) {return "DIRECT";}
 	if (shExpMatch(url, "*.sina.com*")) {return "DIRECT";}

@@ -32,7 +32,20 @@ function FindProxyForURL(url, host) {
 	if (shExpMatch(url, "*.wanfangdata.com.cn*")) {return proxy;}
 	if (shExpMatch(url, "*.pnas.org*")) {return proxy;}
 	if (shExpMatch(url, "*.oup.com*")) {return proxy;}
+	if (shExpMatch(url, "*.cshlp.org*")) {return proxy;}
+	if (shExpMatch(url, "*.biomedcentral.com*")) {return proxy;}
+	if (shExpMatch(url, "*.karger.com*")) {return proxy;}
+	if (shExpMatch(url, "*.liebertpub.com*")) {return proxy;}
+	if (shExpMatch(url, "*.tandfonline.com*")) {return proxy;}
+	if (shExpMatch(url, "*.embopress.org*")) {return proxy;}
+	if (shExpMatch(url, "*.jneurosci.org*")) {return proxy;}
+	if (shExpMatch(url, "*.asahq.org*")) {return proxy;}	
 	if (shExpMatch(url, "*.webofknowledge.com*")) {return proxy;}
+	if (shExpMatch(url, "*.neurology.org*")) {return proxy;}
+	if (shExpMatch(url, "*.europepmc.org*")) {return proxy;}
+	if (shExpMatch(url, "*.plos.org*")) {return proxy;}
+	if (shExpMatch(url, "*.hindawi.com*")) {return proxy;}
+	if (shExpMatch(url, "*.karger.com*")) {return proxy;}
 	//不翻墙的朋友，其他url走直连
 	//为什么你会在这种信息时代不翻墙啦？！
     return "DIRECT"
