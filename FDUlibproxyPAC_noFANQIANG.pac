@@ -46,7 +46,61 @@ function FindProxyForURL(url, host) {
 	if (shExpMatch(url, "*.plos.org*")) {return proxy;}
 	if (shExpMatch(url, "*.hindawi.com*")) {return proxy;}
 	if (shExpMatch(url, "*.karger.com*")) {return proxy;}
+	if (shExpMatch(url, "*.biomedcentral.com*")) {return proxy;}
+	if (shExpMatch(url, "*.wolterskluwer.com*")) {return proxy;}
+	if (shExpMatch(url, "*.itextbook.cn*")) {return proxy;}
+	if (shExpMatch(url, "*.acm.org*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.aacrjournals.org*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.aip.org*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.agu.org*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.ams.org*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.jamanetwork.com*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.aps.org*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.physiology.org*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.asm.org*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.anatomy.tv*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.acs.org*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.annualreviews.org*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.arxiv.org*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.biomedcentral.com*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.bmj.com*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.calis.edu.cn*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.ambridge.org*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.chadwyck.com*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.ebscohost.com*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.emeraldinsight.com*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.eb.com*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.engineeringvillage.com*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.galegroup.com*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.heinonline.org*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.highwirepress.com*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.ieee.org*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.ingentaconnect.com*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.jove.com*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.intlpress.com*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.umich.edu*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.nstl.gov.cn*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.imf.org*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.tandfonline.com*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.jstor.org*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.calis.edu.cn*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.ams.org*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.oclc.org*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.osapublishing.org*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.degruyter.com*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.heinonline.org*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.oxfordscholarship.com*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.projecteuclid.org*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.jhu.edu*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.proquest.com*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.sagepub.com*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.scopus.com*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.siam.org 
+	if (shExpMatch(url, "*.sslibrary.com*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.calis.edu.cn*")) {return "DIRECT";}
+
+
 	//不翻墙的朋友，其他url走直连
 	//为什么你会在这种信息时代不翻墙啦？！
-    return "DIRECT"
+	return "DIRECT"
 }
