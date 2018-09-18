@@ -46,6 +46,11 @@ function FindProxyForURL(url, host) {
 	if (shExpMatch(url, "*.plos.org*")) {return proxy;}
 	if (shExpMatch(url, "*.hindawi.com*")) {return proxy;}
 	if (shExpMatch(url, "*.karger.com*")) {return proxy;}
+	
+	if (shExpMatch(url, "*.biomedcentral.com*")) {return proxy;}
+	if (shExpMatch(url, "*.wolterskluwer.com*")) {return proxy;}
+	if (shExpMatch(url, "*.itextbook.cn*")) {return proxy;}
+	
 	//接下来是常用的国内网站（并不常用），走直接连接
 	if (shExpMatch(url, "*.baidu.com*")) {return "DIRECT";}
 	if (shExpMatch(url, "*.sina.com*")) {return "DIRECT";}
