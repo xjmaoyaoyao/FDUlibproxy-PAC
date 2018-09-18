@@ -9,6 +9,7 @@
 
 
 已经在使用shadowsocks翻墙上网的同学，请复制→https://raw.githubusercontent.com/xjmaoyaoyao/FDUlibproxy-PAC/master/FDUlibproxyPAC.pac
+
 没在使用其他任何工具翻墙上网的同学，请复制noFANQIANG版PAC链接→https://raw.githubusercontent.com/xjmaoyaoyao/FDUlibproxy-PAC/master/FDUlibproxyPAC_noFANQIANG.pac
 
 对于用其他方法翻墙的同学：sorry，不了解你们用的工具所以不可能写出适合你们的代码
