@@ -33,22 +33,7 @@ function FindProxyForURL(url, host) {
 	if (shExpMatch(url, "*.pnas.org*")) {return proxy;}
 	if (shExpMatch(url, "*.oup.com*")) {return proxy;}
 	if (shExpMatch(url, "*.webofknowledge.com*")) {return proxy;}
-	//接下来是常用的国内网站（并不常用），走直接连接
-	if (shExpMatch(url, "*.baidu.com*")) {return "DIRECT";}
-	if (shExpMatch(url, "*.sina.com*")) {return "DIRECT";}
-	if (shExpMatch(url, "*.163.com*")) {return "DIRECT";}
-	if (shExpMatch(url, "*.taobao.com*")) {return "DIRECT";}
-	if (shExpMatch(url, "*.tmall.com*")) {return "DIRECT";}
-	if (shExpMatch(url, "*.jd.com*")) {return "DIRECT";}
-	if (shExpMatch(url, "*.weibo.com*")) {return "DIRECT";}
-	if (shExpMatch(url, "*.qq.com*")) {return "DIRECT";}
-	if (shExpMatch(url, "*.fudan.edu.cn*")) {return "DIRECT";}
-	if (shExpMatch(url, "*.zhihu.com*")) {return "DIRECT";}
-	if (shExpMatch(url, "*.jianshu.com*")) {return "DIRECT";}
-	if (shExpMatch(url, "*.dxj.com*")) {return "DIRECT";}
-	if (shExpMatch(url, "*.jjwxc.net*")) {return "DIRECT";}
-	if (shExpMatch(url, "*.bilibili.com*")) {return "DIRECT";}
-	//其他的就用shadowsocks系统代理。127.0.0.1代表本地，1080是设置过的代理端口。
-	//不知道什么是shadowsocks的朋友，没有翻墙需求的朋友，请把下面那句改成return "DIRECT"
-	return "PROXY 127.0.0.1:1080"
+	//不翻墙的朋友，其他url走直连
+	//为什么你会在这种信息时代不翻墙啦？！
+    return "DIRECT"
 }
