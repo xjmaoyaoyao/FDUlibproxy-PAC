@@ -99,7 +99,7 @@ function FindProxyForURL(url, host) {
 	if (shExpMatch(url, "*.sslibrary.com*")) {return proxy;}
 	if (shExpMatch(url, "*.calis.edu.cn*")) {return proxy;}
 
-	//不翻墙的朋友，其他url走直连
-	//为什么你会在这种信息时代不翻墙啦？！
+	if (shExpMatch(url, "*.elsevier.com*")) {return proxy;}
+
 	return "DIRECT"
 }

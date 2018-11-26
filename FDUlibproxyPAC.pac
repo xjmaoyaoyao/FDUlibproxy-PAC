@@ -99,6 +99,8 @@ function FindProxyForURL(url, host) {
 	if (shExpMatch(url, "*.sslibrary.com*")) {return proxy;}
 	if (shExpMatch(url, "*.calis.edu.cn*")) {return proxy;}
 
+	if (shExpMatch(url, "*.elsevier.com*")) {return proxy;}
+
 	//接下来是常用的国内网站（并不常用），走直接连接
 	if (shExpMatch(url, "*.baidu.com*")) {return "DIRECT";}
 	if (shExpMatch(url, "*.sina.com*")) {return "DIRECT";}
@@ -111,9 +113,12 @@ function FindProxyForURL(url, host) {
 	if (shExpMatch(url, "*.fudan.edu.cn*")) {return "DIRECT";}
 	if (shExpMatch(url, "*.zhihu.com*")) {return "DIRECT";}
 	if (shExpMatch(url, "*.jianshu.com*")) {return "DIRECT";}
-	if (shExpMatch(url, "*.dxj.com*")) {return "DIRECT";}
+	if (shExpMatch(url, "*.dxy.cn*")) {return "DIRECT";}
 	if (shExpMatch(url, "*.jjwxc.net*")) {return "DIRECT";}
 	if (shExpMatch(url, "*.bilibili.com*")) {return "DIRECT";}
+
+	if (shExpMatch(url, "*.youku.com*")) {return "DIRECT";}
+
 	//其他的就用shadowsocks系统代理。127.0.0.1代表本地，1080是设置过的代理端口。
 	//不知道什么是shadowsocks的朋友，没有翻墙需求的朋友，请把下面那句改成return "DIRECT"
 	return "PROXY 127.0.0.1:1080"
