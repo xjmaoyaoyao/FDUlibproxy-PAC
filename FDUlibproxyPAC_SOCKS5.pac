@@ -116,7 +116,7 @@ function FindProxyForURL(url, host) {
 	if (shExpMatch(url, "*.dxy.cn*")) {return "DIRECT";}
 	if (shExpMatch(url, "*.jjwxc.net*")) {return "DIRECT";}
 	if (shExpMatch(url, "*.bilibili.com*")) {return "DIRECT";}
-	if (shExpMatch(url, "*.researchgate.net*")) {return "DIRECT";}
+	if (shExpMatch(url, "*researchgate.net*")) {return "DIRECT";}
 
 	if (shExpMatch(url, "*.youku.com*")) {return "DIRECT";}
 
